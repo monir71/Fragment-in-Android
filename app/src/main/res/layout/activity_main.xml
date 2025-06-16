@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!--
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragA"
+        android:background="#03A9F4"
+        android:layout_weight="1"
+        android:name="com.example.fragmentexample.AFragment"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragB"
+        android:background="#E91E63"
+        android:layout_weight="1"
+        android:name="com.example.fragmentexample.BFragment"/> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnFragA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fragment A"
+            app:backgroundTint="@null"
+            android:background="#08564C"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:layout_marginEnd="1sp"/>
+
+        <Button
+            android:id="@+id/btnFragB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fragment B"
+            app:backgroundTint="@null"
+            android:background="#9C27B0"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:layout_marginEnd="1sp"/>
+
+        <Button
+            android:id="@+id/btnFragC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fragment C"
+            app:backgroundTint="@null"
+            android:background="#105289"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
